@@ -4,18 +4,19 @@
     {
         protected int ar;
         private string nev;
+        
 
-        Termek(string nev, int ar)
+        protected Termek(int ar, string nev)
         {
             this.ar = ar;
             this.nev = nev;
         }
 
-        public abstract int tenylegesAr();
+        public abstract int MennyibeKerul();
 
         public override string ToString()
         {
-            return this.nev + " - " + "Ft";
+            return this.nev + " - " +this.ar+ "Ft";
         }
 
     }
